@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRODUCT ORDER FORM</title>
+  <link rel="stylesheet" href="product.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>PRODUCT ORDER</h1>
+      <div>
+        <form action="">
+          <label for="products">SELECT COMPUTER COMPONETS</label>
+          <select id="products" name="products" >
+          <option value="motherbord">motherbord</option>
+          <option value="cpu">cpu</option>
+          <option value="mouse">moose</option>
+           <option value="keyboard">keyboard</option>
+  </select>
+  <div>
+  </div>
+  <label>Quantity:</label><br>
+  <input type="integer" name="Quantiy" placeholder="Quantity" required><br>
+  </div>
+</form>
+</div>
+<div class="row">
+  <div class="col-75">
+  <div class="container">
+  <form action="/action_page.php" name="myForm" onsubmit="return validateForm()" method="post">
+    <h3>Billing Address</h3>
+            <label for="fname"> Full Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe"><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="john@example.com"><br>
+            <label for="adr"> Address</label><br>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street"><br>
+            <label for="city"> City</label><br>
+            <input type="text" id="city" name="city" placeholder="New York"><br>
+            <label for="city">Phone number</label><br>
+            <input type="text" id="city" name="city" placeholder="01234567"><br>
+            <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="submit" class="btn">
+  
+  </form>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>
